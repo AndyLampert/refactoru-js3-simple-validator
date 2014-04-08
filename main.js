@@ -38,7 +38,13 @@ else {
 // ask if user married
 isMarried = prompt("And are you married (or lonely like me)? (yes/no)");
 if(!((isMarried === "yes") || (isMarried === "no") || (isMarried === "YES") || (isMarried === "NO"))) {
- alert("Please enter \"yes\" or \"no\" !");
+	alert("Please enter \"yes\" or \"no\" !");
 }
 
-// alert("You are: " + "\n")
+alert("Here's your info: " + "\n" +
+	"Your phone number is " + userPhoneNum + "." + "\n" + 
+	"Your DOB is " + birthDate + "." + "\n" + 
+	"Your Zip Code is " + postalCode + "." + "\n" +
+	"Your state is " + userState + "." + "\n" +
+	"Your marrage status is " + isMarried + "\n"
+	);
